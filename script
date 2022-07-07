@@ -1,0 +1,634 @@
+--You cant see the scripts used, so you cant steal this script. Change the code and functions wont work!
+-- Gui to Lua
+
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local Loading = Instance.new("Frame")
+
+local UICorner = Instance.new("UICorner")
+
+local Text = Instance.new("TextLabel")
+
+local UICorner_2 = Instance.new("UICorner")
+
+local firsttext = Instance.new("TextLabel")
+
+local UICorner_3 = Instance.new("UICorner")
+
+local secondtext = Instance.new("TextLabel")
+
+local UICorner_4 = Instance.new("UICorner")
+
+local last_text = Instance.new("TextLabel")
+
+local UICorner_5 = Instance.new("UICorner")
+
+local three_txc = Instance.new("TextLabel")
+
+local UICorner_6 = Instance.new("UICorner")
+
+local TheHack = Instance.new("Frame")
+
+local UICorner_7 = Instance.new("UICorner")
+
+local Text_2 = Instance.new("TextLabel")
+
+local Text_3 = Instance.new("TextLabel")
+
+local UICorner_8 = Instance.new("UICorner")
+
+local Text_4 = Instance.new("TextLabel")
+
+local Text_5 = Instance.new("TextLabel")
+
+local Text_6 = Instance.new("TextLabel")
+
+local MS_EMABLED = Instance.new("TextLabel")
+
+local MP_ENABLED = Instance.new("TextLabel")
+
+local apenabled = Instance.new("TextLabel")
+
+local TextButton = Instance.new("TextButton")
+
+local UICorner_9 = Instance.new("UICorner")
+
+local TextButton_2 = Instance.new("TextButton")
+
+local UICorner_10 = Instance.new("UICorner")
+
+local TextButton_3 = Instance.new("TextButton")
+
+local UICorner_11 = Instance.new("UICorner")
+
+local TextButton_4 = Instance.new("TextButton")
+
+local UICorner_12 = Instance.new("UICorner")
+
+local cklose = Instance.new("TextButton")
+
+local UICorner_13 = Instance.new("UICorner")
+
+local modmenuimagebutton = Instance.new("ImageButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Loading.Name = "Loading"
+
+Loading.Parent = ScreenGui
+
+Loading.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Loading.Position = UDim2.new(0.29411757, 0, 0.175050288, 0)
+
+Loading.Size = UDim2.new(0, 343, 0, 287)
+
+Loading.Active = true
+
+Loading.Draggable = true
+
+UICorner.Parent = Loading
+
+Text.Name = "Text"
+
+Text.Parent = Loading
+
+Text.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text.Position = UDim2.new(0.177842572, 0, 0.0348432064, 0)
+
+Text.Size = UDim2.new(0, 210, 0, 29)
+
+Text.Font = Enum.Font.Roboto
+
+Text.Text = "Funky Friday Script"
+
+Text.TextColor3 = Color3.fromRGB(232, 255, 82)
+
+Text.TextSize = 33.000
+
+UICorner_2.Parent = Text
+
+firsttext.Name = "firsttext"
+
+firsttext.Parent = Loading
+
+firsttext.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+firsttext.Position = UDim2.new(0.177842572, 0, 0.41114983, 0)
+
+firsttext.Size = UDim2.new(0, 210, 0, 29)
+
+firsttext.Visible = false
+
+firsttext.Font = Enum.Font.Roboto
+
+firsttext.Text = "Welcome"
+
+firsttext.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+firsttext.TextSize = 33.000
+
+UICorner_3.Parent = firsttext
+
+secondtext.Name = "secondtext"
+
+secondtext.Parent = Loading
+
+secondtext.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+secondtext.Position = UDim2.new(0.177842572, 0, 0.411149859, 0)
+
+secondtext.Size = UDim2.new(0, 210, 0, 29)
+
+secondtext.Visible = false
+
+secondtext.Font = Enum.Font.Roboto
+
+secondtext.Text = "Loading Script!"
+
+secondtext.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+secondtext.TextSize = 33.000
+
+UICorner_4.Parent = secondtext
+
+last_text.Name = "last_text"
+
+last_text.Parent = Loading
+
+last_text.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+last_text.Position = UDim2.new(0.192419827, 0, 0.411149859, 0)
+
+last_text.Size = UDim2.new(0, 210, 0, 29)
+
+last_text.Visible = false
+
+last_text.Font = Enum.Font.Roboto
+
+last_text.Text = "Done"
+
+last_text.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+last_text.TextSize = 33.000
+
+UICorner_5.Parent = last_text
+
+three_txc.Name = "three_txc"
+
+three_txc.Parent = Loading
+
+three_txc.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+three_txc.Position = UDim2.new(0.192419827, 0, 0.4111498, 0)
+
+three_txc.Size = UDim2.new(0, 210, 0, 29)
+
+three_txc.Visible = false
+
+three_txc.Font = Enum.Font.Roboto
+
+three_txc.Text = "Getting Ready!"
+
+three_txc.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+three_txc.TextSize = 33.000
+
+UICorner_6.Parent = three_txc
+
+TheHack.Name = "TheHack"
+
+TheHack.Parent = ScreenGui
+
+TheHack.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+TheHack.Position = UDim2.new(0.29411757, 0, 0.175050288, 0)
+
+TheHack.Size = UDim2.new(0, 343, 0, 287)
+
+TheHack.Visible = false
+
+UICorner_7.Parent = TheHack
+
+Text_2.Name = "Text"
+
+Text_2.Parent = TheHack
+
+Text_2.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text_2.BorderSizePixel = 0
+
+Text_2.Position = UDim2.new(0.023323616, 0, 0, 0)
+
+Text_2.Size = UDim2.new(0, 200, 0, 50)
+
+Text_2.Font = Enum.Font.SourceSans
+
+Text_2.Text = "Gameplay"
+
+Text_2.TextColor3 = Color3.fromRGB(205, 255, 23)
+
+Text_2.TextSize = 14.000
+
+Text_3.Name = "Text"
+
+Text_3.Parent = TheHack
+
+Text_3.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text_3.BorderSizePixel = 0
+
+Text_3.Position = UDim2.new(0.023323616, 0, 0.327526093, 0)
+
+Text_3.Size = UDim2.new(0, 200, 0, 50)
+
+Text_3.Font = Enum.Font.SourceSans
+
+Text_3.Text = "More Points"
+
+Text_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Text_3.TextSize = 33.000
+
+UICorner_8.Parent = Text_3
+
+Text_4.Name = "Text"
+
+Text_4.Parent = TheHack
+
+Text_4.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text_4.BorderSizePixel = 0
+
+Text_4.Position = UDim2.new(0.0408163294, 0, 0.473867565, 0)
+
+Text_4.Size = UDim2.new(0, 200, 0, 50)
+
+Text_4.Font = Enum.Font.SourceSans
+
+Text_4.Text = "Animations"
+
+Text_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Text_4.TextSize = 33.000
+
+Text_5.Name = "Text"
+
+Text_5.Parent = TheHack
+
+Text_5.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text_5.BorderSizePixel = 0
+
+Text_5.Position = UDim2.new(0.0408163294, 0, 0.623693347, 0)
+
+Text_5.Size = UDim2.new(0, 200, 0, 50)
+
+Text_5.Font = Enum.Font.SourceSans
+
+Text_5.Text = "More Score"
+
+Text_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Text_5.TextSize = 33.000
+
+Text_6.Name = "Text"
+
+Text_6.Parent = TheHack
+
+Text_6.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+Text_6.BorderSizePixel = 0
+
+Text_6.Position = UDim2.new(0.040816322, 0, 0.174216047, 0)
+
+Text_6.Size = UDim2.new(0, 200, 0, 50)
+
+Text_6.Font = Enum.Font.SourceSans
+
+Text_6.Text = "AutoPlayer"
+
+Text_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+Text_6.TextSize = 33.000
+
+MS_EMABLED.Name = "MS_EMABLED"
+
+MS_EMABLED.Parent = TheHack
+
+MS_EMABLED.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+MS_EMABLED.BackgroundTransparency = 12321312.000
+
+MS_EMABLED.BorderSizePixel = 0
+
+MS_EMABLED.Position = UDim2.new(0.192419827, 0, -0.236933827, 0)
+
+MS_EMABLED.Size = UDim2.new(0, 200, 0, 21)
+
+MS_EMABLED.Visible = false
+
+MS_EMABLED.Font = Enum.Font.SourceSans
+
+MS_EMABLED.Text = "More Score IS ENABLED"
+
+MS_EMABLED.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+MS_EMABLED.TextSize = 33.000
+
+MP_ENABLED.Name = "MP_ENABLED"
+
+MP_ENABLED.Parent = TheHack
+
+MP_ENABLED.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+MP_ENABLED.BackgroundTransparency = 132131.000
+
+MP_ENABLED.BorderSizePixel = 0
+
+MP_ENABLED.Position = UDim2.new(0.177842572, 0, -0.174216032, 0)
+
+MP_ENABLED.Size = UDim2.new(0, 200, 0, 28)
+
+MP_ENABLED.Visible = false
+
+MP_ENABLED.Font = Enum.Font.SourceSans
+
+MP_ENABLED.Text = "More Points is ENABLED"
+
+MP_ENABLED.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+MP_ENABLED.TextSize = 33.000
+
+apenabled.Name = "apenabled"
+
+apenabled.Parent = TheHack
+
+apenabled.BackgroundColor3 = Color3.fromRGB(30, 23, 255)
+
+apenabled.BackgroundTransparency = 1231231.000
+
+apenabled.BorderSizePixel = 0
+
+apenabled.Position = UDim2.new(0.177842572, 0, -0.306620181, 0)
+
+apenabled.Size = UDim2.new(0, 200, 0, 20)
+
+apenabled.Visible = false
+
+apenabled.Font = Enum.Font.SourceSans
+
+apenabled.Text = "AutoPlayer is ENABLED"
+
+apenabled.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+apenabled.TextSize = 33.000
+
+TextButton.Parent = TheHack
+
+TextButton.BackgroundColor3 = Color3.fromRGB(76, 255, 0)
+
+TextButton.Position = UDim2.new(0.676384866, 0, 0.209059238, 0)
+
+TextButton.Size = UDim2.new(0, 24, 0, 33)
+
+TextButton.Font = Enum.Font.SourceSans
+
+TextButton.Text = ""
+
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextButton.TextSize = 14.000
+
+UICorner_9.Parent = TextButton
+
+TextButton_2.Parent = TheHack
+
+TextButton_2.BackgroundColor3 = Color3.fromRGB(76, 255, 0)
+
+TextButton_2.Position = UDim2.new(0.676384866, 0, 0.348432034, 0)
+
+TextButton_2.Size = UDim2.new(0, 24, 0, 33)
+
+TextButton_2.Font = Enum.Font.SourceSans
+
+TextButton_2.Text = ""
+
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextButton_2.TextSize = 14.000
+
+UICorner_10.Parent = TextButton_2
+
+TextButton_3.Parent = TheHack
+
+TextButton_3.BackgroundColor3 = Color3.fromRGB(76, 255, 0)
+
+TextButton_3.Position = UDim2.new(0.676384866, 0, 0.651567936, 0)
+
+TextButton_3.Size = UDim2.new(0, 24, 0, 33)
+
+TextButton_3.Font = Enum.Font.SourceSans
+
+TextButton_3.Text = ""
+
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextButton_3.TextSize = 14.000
+
+UICorner_11.Parent = TextButton_3
+
+TextButton_4.Parent = TheHack
+
+TextButton_4.BackgroundColor3 = Color3.fromRGB(76, 255, 0)
+
+TextButton_4.Position = UDim2.new(0.676384866, 0, 0.498257846, 0)
+
+TextButton_4.Size = UDim2.new(0, 24, 0, 33)
+
+TextButton_4.Font = Enum.Font.SourceSans
+
+TextButton_4.Text = ""
+
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+TextButton_4.TextSize = 14.000
+
+UICorner_12.Parent = TextButton_4
+
+cklose.Name = "cklose"
+
+cklose.Parent = TheHack
+
+cklose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+cklose.BackgroundTransparency = 321132.000
+
+cklose.Position = UDim2.new(0.883381724, 0, 0, 0)
+
+cklose.Size = UDim2.new(0, 40, 0, 34)
+
+cklose.Font = Enum.Font.SourceSans
+
+cklose.Text = "X"
+
+cklose.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+cklose.TextSize = 14.000
+
+UICorner_13.Parent = cklose
+
+modmenuimagebutton.Name = "modmenu image button"
+
+modmenuimagebutton.Parent = ScreenGui
+
+modmenuimagebutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+modmenuimagebutton.BackgroundTransparency = 1321321.000
+
+modmenuimagebutton.Position = UDim2.new(0.820971906, 0, 0.0523138829, 0)
+
+modmenuimagebutton.Size = UDim2.new(0, 38, 0, 48)
+
+modmenuimagebutton.Visible = false
+
+modmenuimagebutton.Image = "http://www.roblox.com/asset/?id=6681489537"
+
+-- Scripts:
+
+local function KKJZG_fake_script() -- Loading.LocalScript 
+
+	local script = Instance.new('LocalScript', Loading)
+
+	wait(1)
+
+	script.Parent.Parent.Loading.Visible = true
+
+	wait(1)
+
+	script.Parent.firsttext.Visible = true
+
+	wait(1)
+
+	script.Parent.firsttext.Visible = false
+
+	script.Parent.secondtext.Visible = true
+
+	wait(1)
+
+	script.Parent.firsttext.Visible = false
+
+	script.Parent.secondtext.Visible = false
+
+	script.Parent.three_txc.Visible = true
+
+	wait(1)
+
+	script.Parent.firsttext.Visible = false
+
+	script.Parent.secondtext.Visible = false
+
+	script.Parent.three_txc.Visible = false
+
+	script.Parent.last_text.Visible = true
+
+	wait(1)
+
+	script.Parent.firsttext.Visible = false
+
+	script.Parent.secondtext.Visible = false
+
+	script.Parent.three_txc.Visible = false
+
+	script.Parent.last_text.Visible = true
+
+	script.Parent.Parent.Loading.Visible = false
+
+	script.Parent.Parent.TheHack.Visible = true
+
+end
+
+coroutine.wrap(KKJZG_fake_script)()
+
+local function LWEK_fake_script() -- TextButton.LocalScript 
+
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect((function()
+
+		script.Parent.Parent.apenabled.Visible = true
+
+	end))
+
+end
+
+coroutine.wrap(LWEK_fake_script)()
+
+local function SIBE_fake_script() -- TextButton_2.LocalScript 
+
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	script.Parent.MouseButton1Click:Connect((function()
+
+		script.Parent.Parent.MP_ENABLED.Visible = true
+
+	end))
+
+end
+
+coroutine.wrap(SIBE_fake_script)()
+
+local function JZJI_fake_script() -- TextButton_3.LocalScript 
+
+	local script = Instance.new('LocalScript', TextButton_3)
+
+	script.Parent.MouseButton1Click:Connect((function()
+
+		script.Parent.Parent.MS_EMABLED.Visible = true
+
+	end))
+
+end
+
+coroutine.wrap(JZJI_fake_script)()
+
+local function PIWP_fake_script() -- cklose.LocalScript 
+
+	local script = Instance.new('LocalScript', cklose)
+
+	script.Parent.MouseButton1Click:Connect((function()
+
+		script.Parent.Parent.Parent["modmenu image button"].Visible = true
+
+		script.Parent.Parent.Parent.TheHack.Visible = false
+
+	end))
+
+end
+
+coroutine.wrap(PIWP_fake_script)()
+
+local function YDQXMKZ_fake_script() -- modmenuimagebutton.LocalScript 
+
+	local script = Instance.new('LocalScript', modmenuimagebutton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+
+		script.Parent.Parent.TheHack.Visible = true
+
+		script.Parent.Parent["modmenu image button"].Visible = false
+
+	end)
+
+end
+
+coroutine.wrap(YDQXMKZ_fake_script)()
